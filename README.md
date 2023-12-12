@@ -1,5 +1,5 @@
-# modbus-frame-analyzer
-Simple tool to analyze Modbus TCP frames. You can input up to three frames.
+# [modbus-frame-analyzer](https://marf41.github.io/modbus-frame-analyzer/)
+Simple tool to analyze Modbus TCP frames. You can input up to three frames. Available at [link](https://marf41.github.io/modbus-frame-analyzer/).
 
 On input (hex, case insensitive, whitespaces are removed):
 ```
