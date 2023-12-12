@@ -72,7 +72,7 @@ function analyze(f, arr, short, check) {
   fmap[3] = function(d) {
     var out = '';
     if (d.length == 4) {
-      out += 'REQUEST: Read ' + amount + ' of registers from address ' + start + '. ';
+      out += 'REQUEST: Read ' + amount + ' registers from address ' + start + '. ';
     } else {
       var len = d[0] / 2;
       out += len + ' registers follow.\n';
@@ -111,7 +111,7 @@ function parse(arr, start) {
   if (func == 0) { short = true; }
   if (len > 255) { short = true; }
   if (proto != 0) {
-    if ((typeof start === 'undefined') || (start != 0)) { return 'Not a Modbus frame.'; }
+    if ((typeof start === 'undefined') || (start != 0)) { return 'Not a Modbus frame - wrong protocol field value.'; }
     for (var i = 2; i < arr.length - 3; i++) {
       if ((arr[i] == 0) && (arr[i+1] == 0) && (arr[i+3] > 0)) { starts.push(i - 2); }
     }
