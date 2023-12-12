@@ -1,0 +1,17 @@
+body,
+textarea {
+  background: #333;
+  color: #ccc;
+}
+
+pre,
+textarea {
+  margin: 1rem;
+  min-height: 4rem;
+  min-width: 20rem;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
